@@ -1,0 +1,131 @@
+/* CALCULATOR FIRST */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #2d2d2d;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container h2{
+  position: absolute;
+  top: 20%;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.calculator{
+  background-color: #1f2329;
+  padding: 10px;
+margin: 25vh auto 0 auto;
+box-shadow:  -7px 5px 10px #434343;
+
+}
+
+
+.calculator form input{
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  margin: 5px;
+  border-radius: 30px;
+  background-color: #e1eafa;
+  font-size: 25px;
+
+
+}
+
+.calculator .result{
+ display: flex;
+
+}
+.calculator .result input{
+  flex: 1;
+  border-radius: 0px;
+  font-size: 50px;
+  background-color: transparent;
+  color: white;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+  height: 120px;
+  overflow: hidden;
+
+
+}
+
+#wide{
+width: 130px;
+background: #2b9ecf;
+color: white;
+
+}
+#operators{
+  background: #2b9ecf;
+  color: white;
+
+
+}
+/* CALCULATOR ENDS HERE */
+
+
+
+
+/* NAV AND HAMBURGER MENU STYLING */
+
+
+.header{
+  display: flex;
+justify-content: flex-end; 
+ align-items: flex-end;
+  text-align: end;
+  color: white;
+margin: 10px;
+}
+
+
+
+ .top-nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  gap: 50px;
+  list-style: none;
+  font-family: sans-serif;
+
+
+}
+
+.header nav ul li{
+  display: flex;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.header  ul li:hover{
+  text-decoration: underline cyan 2px ;
+}
+
+@media (max-width: 700px) {
+
+/* THIS IS THE HAMBURGER BUTTON */
+
+.header i {
+display: none;
+}
+}

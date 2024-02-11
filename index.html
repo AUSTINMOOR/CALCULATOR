@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY CALCULATOR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <i class="bx bx-menu"></i>
+
+      <div class="top-nav">
+        <ul>
+          <li>Currency Converter</li>
+          <li>Upgrade calculator</li>
+          <li>About us</li>
+        </ul>
+      </div>
+    </div>
+    <!-- NAV ENDS HERE -->
+
+    <!--  MY CALCULATOR AND FUNCTIONALITY-->
+    <div class="container">
+      <h2>MY BASIC CALCULATOR</h2>
+
+      <div class="calculator">
+        <form>
+          <div class="result">
+            <input type="text" value="0" name="result" />
+          </div>
+          <div>
+            <input type="button" value="AC" onclick="result.value = '' " />
+            <input
+              type="button"
+              value="DEL"
+              onclick="result.value = result.value.toString().slice(0,-1) "
+            />
+
+            <input type="button" value="%" onclick="result.value += '%' " />
+            <input
+              type="button"
+              value="/"
+              id="operators"
+              onclick="result.value += '/' "
+            />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="result.value += '7' " />
+            <input type="button" value="8" onclick="result.value += '8' " />
+            <input type="button" value="9" onclick="result.value += '9' " />
+            <input
+              type="button"
+              value="X"
+              id="operators"
+              onclick="result.value += '*' "
+            />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="result.value += '4' " />
+            <input type="button" value="5" onclick="result.value += '5' " />
+            <input type="button" value="6" onclick="result.value += '6' " />
+            <input
+              type="button"
+              value="-"
+              id="operators"
+              onclick="result.value += '-' "
+            />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="result.value += '1' " />
+            <input type="button" value="2" onclick="result.value += '2' " />
+            <input type="button" value="3" onclick="result.value += '3' " />
+            <input
+              type="button"
+              value="+"
+              id="operators"
+              onclick="result.value += '+' "
+            />
+          </div>
+          <div>
+            <input type="button" value="0" onclick="result.value += '0' " />
+            <input type="button" value="." onclick="result.value = '.' " />
+            <input
+              type="button"
+              value="="
+              onclick="result.value = eval(result.value)  "
+              id="wide"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
